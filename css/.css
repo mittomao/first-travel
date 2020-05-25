@@ -1,0 +1,1107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.6s ease;
+}
+
+html, body {
+  font-size: 100%;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.font-dark {
+  color: black;
+}
+
+.font-white {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+  object-fit: cover;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper_main {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.font_josan, .destination__slider .slider_item .slider_body h5.name, h2.title_h2, .banner_4 .media-body h5, .banner_2__content p, .nav-link {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1660px) {
+  .container {
+    max-width: 1450px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+.container {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.banners {
+  background: #fff;
+  max-width: 1420px;
+  margin: 0 auto;
+  opacity: 3;
+}
+.banners section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banners__left {
+  display: flex;
+}
+.banners__left > div {
+  margin-right: 20px;
+}
+.banners__left > div:not(:last-child) {
+  margin-right: 5px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banners__left > div:not(:last-child) i.fa {
+  font-size: 25px;
+  padding: 0 20px;
+}
+.banners__left > div:not(:last-child) i.fa:nth-child(1) {
+  color: aqua;
+}
+.banners__left > div:not(:last-child) p {
+  font-size: 14px;
+  margin-top: 12px;
+  display: inline-block;
+}
+.banners__left > div:last-child {
+  margin-top: 10px;
+}
+.banners__left > div:nth-child(2):before {
+  content: "";
+  width: 1px;
+  height: 50%;
+  background: gray;
+  margin-left: 20px;
+}
+.banners__left .contact-phone .sub-contact {
+  position: relative;
+}
+.banners__left .contact-phone .sub-contact-item {
+  position: absolute;
+  bottom: -90px;
+  max-width: 200px;
+  left: 0;
+  font-size: 13px;
+  padding: 5px;
+  background: #fff;
+  display: none;
+}
+
+.hideFormSearch {
+  box-shadow: 0 0 20px gray;
+  filter: blur(5px);
+  transform: translateX(-15px);
+}
+
+.menu {
+  background: #4a4a4a;
+}
+
+.nav-link {
+  padding: 20px 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  display: inline-block;
+}
+
+.nav-item i.fa {
+  font-size: 13px;
+}
+.nav-item img {
+  width: 24px;
+  height: 24px;
+}
+.nav-item:hover .sub_menu {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+.header {
+  margin: 0 auto;
+  background: url(https://thefirsttravels.com/files/files/FileDemo/banner1_1.jpg);
+  height: calc(93vh - 90px);
+  background-size: cover;
+  z-index: 100;
+}
+.header__logo img {
+  width: 183px;
+  height: 42px;
+  align-items: center;
+}
+.header__content {
+  padding-top: 165px;
+}
+.header__content .papa {
+  position: relative;
+}
+.header__content .papa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -35px;
+  width: 2px;
+  height: 100%;
+  transform: scaleY(0.95);
+  background: #fff;
+}
+.header__content .padLeft {
+  padding-left: 50px;
+}
+.header__content h3 {
+  font-size: 40px;
+  line-height: 45px;
+  color: #fff;
+  width: 250px;
+}
+.header__content p {
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding-bottom: 30px;
+  font-size: 14px;
+}
+.header__content section.where {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  cursor: pointer;
+}
+.header__content section.where p {
+  font-size: 12px;
+  line-height: 40px;
+  color: #000;
+  padding: 0 20px;
+  background: #fff;
+}
+.header__content section.where div {
+  background: #28BEF3;
+  max-height: 100%;
+  height: auto;
+}
+.header__content section.where i.fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 11px 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.header__content section.where .rotate {
+  transform: rotate(90deg);
+}
+.header__content section.answer {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+  border-radius: 10px;
+}
+.header__content section.answer .list {
+  padding: 10px;
+}
+.header__content section.answer a {
+  color: gray;
+  padding: 3px 20px;
+  font-size: 14px;
+  display: block;
+}
+.header__content section.answer a:hover {
+  color: #3d0ef5;
+  text-shadow: 0 0 3px #3d0ef5;
+}
+.header__content section.answer__active {
+  display: block;
+  animation: 1s goTop ease-in-out;
+  z-index: 1000;
+}
+
+.nav__bar--header {
+  position: relative;
+}
+
+.sub_menu {
+  background: #fff;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 999;
+  padding: 10px;
+  width: 100%;
+  height: 300px;
+  left: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.sub_menu__child {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.sub_menu__child ul {
+  width: 25%;
+  position: relative;
+}
+.sub_menu__child li {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0 20px;
+}
+.sub_menu__child a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+.sub_menu__child i.fa {
+  font-size: 18px;
+}
+.sub_menu__child a:hover {
+  color: #3498db;
+}
+.sub_menu__child .img_box_menu {
+  width: 75%;
+  height: 100%;
+  background-image: url(https://thefirsttravels.com/files/files/FileDemo/q3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sub_menu__child li:hover > .child_child {
+  display: block;
+}
+.sub_menu__child li:hover > i.fa {
+  transform: rotate(90deg);
+}
+.sub_menu .child_child {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.sub_menu .child_child a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.main {
+  margin-top: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.card {
+  max-height: 300px;
+  height: 300px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.card img.img_big {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .card__item {
+  padding: 54px;
+}
+.card .card__item img {
+  width: 61px;
+}
+.card .card__item p.card__text {
+  font-size: 16px;
+  padding: 10px 0 0;
+}
+
+.bg_aqua {
+  background: #28BEF3;
+}
+
+.bg_oran {
+  background: #FFF587;
+}
+
+.banner_1 {
+  margin-top: 30px;
+}
+
+.banner_2 {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.banner_2 .parallax {
+  background-image: url("https://thefirsttravels.com/files/files/banner5.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 768px;
+}
+.banner_2__content {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+}
+.banner_2__content p {
+  font-size: 40px;
+  line-height: 42px;
+  text-shadow: 2px 2px 4px #000;
+  color: #fff;
+}
+
+.null {
+  width: 100%;
+  height: 100px;
+}
+
+.banner_4 {
+  padding-bottom: 100px;
+}
+.banner_4 .card_img {
+  width: 100%;
+  height: 100%;
+}
+.banner_4 .card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner_4 ul {
+  margin: 115px 0 0;
+  padding: 0 0 0 100px;
+}
+.banner_4 .media {
+  margin-bottom: 20px;
+}
+.banner_4 .media:hover h5 {
+  color: #28BEF3;
+}
+.banner_4 .media-body {
+  padding-left: 30px;
+}
+.banner_4 .media-body h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card_hover:hover img {
+  display: block;
+  transform: scale(1.2);
+}
+
+h2.title_h2 {
+  font-size: 32px;
+  margin-bottom: 35px;
+  font-weight: 300;
+}
+
+p.text {
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+.mr_bottom {
+  margin-bottom: 40px;
+}
+
+.box-center {
+  margin: auto auto;
+}
+
+.banner_5 {
+  padding: 60px 15px 0;
+}
+.banner_5__item {
+  width: 100%;
+  max-height: 305px;
+  margin-bottom: 30px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.banner_5__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner_5__item h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.special {
+  padding-bottom: 110px;
+  padding-top: 40px;
+}
+.special .box_special {
+  margin-top: 50px;
+  align-items: stretch;
+}
+.special .box_special__item {
+  text-align: center;
+  height: 100%;
+}
+.special .box {
+  width: 100%;
+  height: 100%;
+}
+.special .box div.img_box {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 40px;
+}
+.special .box p {
+  padding: 0 35px;
+}
+.special .bor-right {
+  border-right: 1px solid #B1B1B1;
+}
+
+.banner_6 {
+  background-image: url(https://thefirsttravels.com/files/files/banner7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  margin-bottom: 70px;
+}
+.banner_6 .logo_top {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 7%;
+  width: 75px;
+}
+.banner_6 .logo_top img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.banner_6 h4 {
+  width: 80%;
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  margin: auto auto 40px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.banner_6 span {
+  border-radius: 50%;
+  width: 113px;
+}
+.banner_6 span img {
+  width: 100%;
+  object-fit: cover;
+}
+.banner_6 .text-spec {
+  width: 80%;
+  color: #fff;
+  word-wrap: break-word;
+  text-align: left;
+  padding-left: 25px;
+}
+.banner_6 .name_user {
+  margin-top: 20px;
+}
+.banner_6 .name_user h5 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+.banner_6 .name_user h6 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+}
+.banner_6 .owl-dots {
+  margin-top: 20px;
+}
+.banner_6 .owl-dots .active {
+  background: orange;
+}
+.banner_6 .owl-dots .owl-dot {
+  margin-left: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  outline: none;
+}
+.banner_6 .owl-dots .owl-dot span {
+  background: orange;
+}
+.banner_6 .owl-nav {
+  display: none;
+}
+
+.destination {
+  margin: 0 auto;
+}
+.destination__slider {
+  margin-top: 60px;
+}
+.destination__slider .slider_item {
+  width: 100%;
+  position: relative;
+}
+.destination__slider .slider_item > div {
+  display: block;
+  width: 100%;
+  max-height: 295px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.destination__slider .slider_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.destination__slider .slider_item .slider_body {
+  padding: 15px;
+}
+.destination__slider .slider_item .slider_body h5.name {
+  font-size: 18px;
+  color: #000;
+}
+.destination__slider .slider_item .slider_body p.text_slider {
+  line-height: 28px;
+  font-size: 14px;
+  color: #000;
+}
+.destination__slider .slider_item .slider_body .read_more {
+  margin: 0 0 20px;
+}
+
+.owl-nav button.owl-prev {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+  outline: none;
+}
+
+.owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  outline: none;
+}
+
+.owl-nav button.owl-prev span,
+.owl-nav button.owl-next span {
+  font-size: 50px;
+}
+
+.list_travel {
+  width: 100%;
+  background-color: #303030;
+  color: #fff;
+}
+
+.list_top {
+  padding-top: 50px;
+}
+
+.list_item {
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+.list_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.list_item__text {
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.list_item__text h5.name {
+  font-size: 17px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.list_item__text a {
+  font-size: 14px;
+  color: #fff;
+  display: block;
+}
+
+.list_bottom {
+  padding: 45px 0;
+}
+.list_bottom ul {
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+}
+.list_bottom ul li {
+  width: 20%;
+  text-align: center;
+}
+.list_bottom ul h5 {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.list_menu {
+  background: #28BEF3;
+}
+
+.box_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list_menu .list_menu_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list_menu .list_menu_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list_menu .list_menu_left li {
+  padding: 20px 20px 15px 20px;
+}
+
+.list_menu .list_menu_right li {
+  padding: 20px 10px 15px;
+}
+
+.list_menu .list_menu_left a {
+  font-weight: 700;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  color: #fff;
+}
+
+.list_menu .list_menu_right a {
+  padding: 5px 20px;
+  background: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.list_menu_right li span {
+  padding: 10px 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.list_menu_right li i.fa {
+  font-size: 20px;
+  color: #fff;
+}
+
+.feedback {
+  padding: 45px 0;
+}
+.feedback h3.title {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.feedback li {
+  line-height: 30px;
+}
+.feedback li a {
+  font-size: 14px;
+  color: #0D47A1;
+}
+
+.form-search {
+  width: 400px;
+  height: 200px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  padding-top: 100px;
+  position: fixed;
+  top: -500px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100000;
+}
+.form-search > div {
+  padding: 20px;
+}
+.form-search span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.form-search span i.fa {
+  font-size: 20px;
+}
+.form-search input {
+  font-size: 18px;
+  padding: 10px 10px;
+  border: 1px solid gray;
+  width: 100%;
+}
+
+.showFormSearch {
+  top: 20px;
+}
+
+.tabRight-fas {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 100;
+  background: #0b94c5;
+  transition: all 0.4s;
+}
+.tabRight-fas span {
+  display: block;
+  padding: 15px 10px;
+  text-align: center;
+}
+.tabRight-fas span img {
+  height: 28px;
+  width: auto;
+}
+.tabRight-fas span em {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  display: none;
+}
+.tabRight-fas:hover span {
+  transform: scaleX(1.2);
+}
+.tabRight-fas:hover em {
+  display: block;
+}
+
+.backTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: orange;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+}
+.backTop i.fa {
+  font-size: 22px;
+  color: #fff;
+  padding: 15px;
+}
+
+.footer {
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.footer__main {
+  background: url(https://thefirsttravels.com/Content/img/index/contact_header/shadow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h3.title_pay {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.pay_first {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.pay_first .pay_card span {
+  margin-right: 15px;
+}
+.pay_first .pay_card span img {
+  height: 38px;
+  width: auto;
+}
+.pay_first .pay_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.pay_first .pay_menu a {
+  font-size: 14px;
+  color: #28BEF3;
+  padding-left: 20px;
+}
+
+.pay_last {
+  display: flex;
+  border-top: 1px solid gray;
+  padding-top: 30px;
+}
+.pay_last li {
+  flex-grow: 4;
+}
+.pay_last li p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.end {
+  width: 100%;
+}
+
+.end_g {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 5px 0;
+}
+.end_g p {
+  font-size: 14px;
+  margin: auto 0;
+}
+.end_g a {
+  padding: 5px 20px;
+  background: #EF801D;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 5px;
+}
+.end_g a i.fa {
+  padding-right: 5px;
+}
+
+.call_api {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  background: blue;
+  border-radius: 50%;
+  display: none;
+}
+.call_api img {
+  height: 28px;
+  width: auto;
+}
+
+@keyframes goTop {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 768px) {
+  .tabRight-fas-md {
+    display: none;
+  }
+
+  .banners-md {
+    display: none;
+  }
+
+  .special .bor-right-md {
+    border-right: none;
+  }
+
+  .box_menu-md {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .end p {
+    display: none;
+  }
+
+  .end_g a.full-box {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .backTop {
+    bottom: 50px;
+    right: 50px;
+  }
+
+  .call_api-md {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  h3.title_pay-md {
+    text-align: center;
+  }
+
+  .pay_first-md {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .pay_first-md .pay_card {
+    margin-bottom: 20px;
+  }
+
+  .pay_last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    padding: 10px 0;
+  }
+  .menu .navbar-toggler {
+    color: #fff;
+  }
+
+  .header__content h3 {
+    font-size: 25px;
+  }
+
+  .header__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .header__logo img {
+    width: 150px;
+    height: 32px;
+    align-items: center;
+    margin: auto 0;
+  }
+
+  .inquire {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .banner_4 .card_img {
+    width: 80%;
+    height: 80%;
+    margin: auto auto;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  i.fa.fa-caret-down.font-white {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+
+/*# sourceMappingURL=.css.map */

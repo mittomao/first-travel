@@ -1,0 +1,161 @@
+.list_menu {
+    background: #28BEF3;
+  }
+  
+  .box_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .list_menu .list_menu_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .list_menu .list_menu_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .list_menu .list_menu_left li {
+    padding: 20px 20px 15px 20px;
+  }
+  
+  .list_menu .list_menu_right li {
+    padding: 20px 10px 15px;
+  }
+  
+  .list_menu .list_menu_left a {
+    font-weight: 700;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .list_menu .list_menu_right a {
+    padding: 5px 20px;
+    background: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .list_menu_right li span {
+    padding: 10px 12px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .list_menu_right li i.fa {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .feedback {
+    padding: 45px 0;
+  }
+  .feedback h3.title {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  .feedback li {
+    line-height: 30px;
+  }
+  .feedback li a {
+    font-size: 14px;
+    color: #0D47A1;
+  }
+  
+  .footer {
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .footer__main {
+    background: url(https://thefirsttravels.com/Content/img/index/contact_header/shadow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  h3.title_pay {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .pay_first {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .pay_first .pay_card span {
+    margin-right: 15px;
+  }
+  .pay_first .pay_card span img {
+    height: 38px;
+    width: auto;
+  }
+  .pay_first .pay_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .pay_first .pay_menu a {
+    font-size: 14px;
+    color: #28BEF3;
+    padding-left: 20px;
+  }
+  
+  .pay_last {
+    display: flex;
+    border-top: 1px solid gray;
+    padding-top: 30px;
+  }
+  .pay_last li {
+    flex-grow: 4;
+  }
+  .pay_last li .copy_right{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .pay_last li p {
+    font-size: 14px;
+    color: #fff;
+  }
+/* Phan Cuoi Cung */
+.end {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background:#fff;
+      z-index: 9999;
+  }
+  .end_g {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+  }
+  .end_g p {
+    font-size: 14px;
+    margin: auto 0;
+  }
+  .end_g a {
+    padding: 5px 20px;
+    background: #EF801D;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .end_g a i.fa {
+    padding-right: 5px;
+  }

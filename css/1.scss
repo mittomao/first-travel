@@ -1,0 +1,1118 @@
+@mixin flex($jus:center,$ali:center,$wrap : nowrap) {
+    display: flex;
+    justify-content:$jus;
+    align-items: $ali;
+    flex-wrap: $wrap;
+}
+// Css Chung Cho Cac The 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .6s ease;
+}
+html , body{
+    font-size: 100%;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+.font-dark{
+    color: black;
+}
+.font-white{
+    color: #fff;
+}
+.text_small{
+    font-size: 12px;
+}
+.font_josan{
+    font-family: 'Josefin Sans', sans-serif;
+}
+ul{list-style: none;}
+img{
+    vertical-align: middle;
+    border-style: none;
+    object-fit: cover;
+}
+body{
+     font-family: 'Open Sans', sans-serif;
+}
+// Phan Main
+.wrapper_main{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+// Banner
+.banners{
+    background: #fff;
+    opacity: 1;
+    
+    // .button-banner{
+    //     padding: 3px 15px;
+    //     border: 1px solid blue;
+    //     background: none;
+    // }
+    .btn_right{
+        margin-left: auto;
+    }
+    .contact-mail,.contact-phone{
+        margin-right: 30px;
+        img{
+            width: 23px;
+            margin-right: 15px;
+        }
+    }
+    span{
+        font-size: 13px;
+    }
+    .trustpilot{
+        span{
+            display: block;
+        }
+        img{
+            width: 80px;
+        }
+    }
+    .padding_b{
+        padding: 4px 0;
+    }
+
+}
+// End Banner
+// Form Search
+.hideFormSearch{
+    box-shadow: 0 0 20px gray;
+    filter: blur(5px);
+    transform:translateX(-15px);
+}
+// End Form Search
+// Menu
+.menu{
+    background: #4a4a4a;
+}
+.nav-link{
+    padding: 24px 0;
+    font-size:13px;
+    font-weight: 400;
+    @extend .font_josan;
+    color: #fff;
+    display: inline-block;
+}
+.nav-item{
+    // position: relative;
+    i.fa{
+        font-size:13px;
+        // color: #fff; 
+    }
+    img{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.header{
+    margin: 0 auto;
+    background: url(https://thefirsttravels.com/files/files/FileDemo/banner1_1.jpg);
+    height: calc(93vh - 90px);
+    background-size: cover;
+    z-index: 100;
+    &__logo{
+        img{width: 183px;height: 42px;align-items: center;}
+    }
+   
+    &__content{
+        padding-top: 95px;
+        padding-bottom: 120px;
+        .papa{
+            position: relative;
+        }
+        .papa::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -55px;
+            width: 2px;
+            height: 100%;
+            transform:scaleY(0.95);
+            background: #fff;
+        }
+        .padLeft{
+            padding-left: 50px;
+            // position: relative;
+
+            
+        }
+        
+        h3{
+            font-size: 40px;
+            line-height: 45px;
+            width: 248px;
+            color: #fff;
+        }
+        p{
+            font-family: 'Open Sans',sans-serif;
+            display:block;
+            width: 100%;
+            color: #fff;
+            padding-bottom: 30px;
+            font-size: 14px;
+            line-height: 26px;
+        }
+        section.where{
+            width: 250px;
+            @include flex();
+            cursor: pointer;
+            p{
+                font-size: 12px;
+                line-height:40px;
+                color: #000;
+                padding: 0 20px;
+                background: #fff;
+                margin-bottom: 0; 
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+            }
+            div{
+                background: #28BEF3;
+                padding: 0 15px;
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            i.fa{
+                font-size: 26px;
+                color: #fff;
+                text-align: center;
+                line-height:40px;
+                border-top-right-radius: 5px;;
+                border-bottom-right-radius: 5px;
+            }
+            .rotate{
+                transform:rotate(90deg);
+            }
+        }
+        section.answer{
+            margin-top: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,.5);
+            display: none;
+            position: relative;
+            border-radius: 10px;
+            &:before{
+                content: '';
+                position:absolute;
+                top: -10px;
+                left: 60px;
+                width:60px;
+                height: 30px;
+                background: #fff;
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            }
+            .list{
+                padding: 10px;
+            }
+            a{
+                color: #797979;
+                padding: 3px 20px;
+                font-size: 14px;
+                display: block;
+                transition: .5s;
+            }
+            a:hover{
+                color: #007bff;
+                font-weight: 600;
+                cursor: pointer;
+            }
+            &__active{
+                display: block;
+                animation: 1s goTop ease-in-out;
+                z-index: 10;
+            }
+        }
+    }
+}
+// Sub Menu
+.nav__bar--header{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.navbar-expand-lg{
+    padding: 0;
+}
+.navbar-nav{
+    display: flex;
+    align-items:center;
+}
+.nav-item{
+    margin-left: 8px;
+}
+.nav-item:last-child{
+    margin: 0;
+}
+// .active_menu{
+//     opacity: 1;
+//     visibility: visible;
+//     display: block;
+//  }
+li.sub_menu>ul.menu_flex{
+    position: absolute;
+    // top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    /* opacity: 0;
+    visibility: hidden; */
+    width: 100%;
+    
+    transition: .3s;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+}
+li.sub_menu:hover>ul.menu_flex {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+ul.menu_flex{
+    display: flex;
+}
+ul.menu_flex .left{
+    background: #fff;
+    width: 20%;
+    position: relative;
+}
+
+ul.menu_flex .right{
+    width: 80%;
+    display: block;
+    img{
+        width: 100%;
+        height: auto;
+
+        object-fit: cover;
+    }
+}
+li.sub_menu__child > ul{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 300px;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+li.sub_menu__child > ul a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+li.sub_menu__child:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+.sub_menu__child{
+    // margin-top: 10px;
+}
+.sub_menu__child  a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    font-weight:600;
+
+}
+.sub_menu__child  a:hover{
+    
+   color: #28BEF3!important
+    
+}
+
+// End Menu
+
+// Phan Main
+.main{
+    margin-top: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin:0 auto;
+}
+.card{
+    max-height: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    img.img_big{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card__item{
+        padding: 54px;
+        img{
+            width: 61px;
+        }
+        p.card__text{
+            font-size: 16px;
+            padding: 10px 0 0;
+        }
+    }
+}
+.back_abc{
+    display:none;
+}
+.bg_aqua{
+    background: #28BEF3;;
+}
+.bg_oran{
+    background: #FFF587;
+}
+// End main
+// Banner1
+.banner_1{
+    margin-top: 30px;
+}
+// end Banner1
+// Banner 2
+.banner_2{
+    width: 100%;
+    position: relative;
+    z-index:2;
+    .parallax {
+        background-image: url("https://thefirsttravels.com/files/files/banner5.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 793px;
+    }
+    &__content{
+        position: absolute;
+        top: 40%;
+        right:15%;
+        p{
+            font-size: 40px;
+            line-height: 42px;
+            text-shadow: 2px 2px 4px #000;
+            color: #fff;
+            @extend .font_josan;
+
+        }
+    }
+
+}
+.null{
+    width: 100%;
+    height: 100px;
+}
+// End Banner 2
+
+.banner_3{
+   
+}
+// Banner 4
+.banner_4{
+    padding-bottom: 100px;
+    .card_img{
+        width: 100%;
+        height: 100%;
+        img{
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+            }
+    }
+    ul{
+        margin: 115px 0 0;
+        padding: 0 0 0 100px;
+    }
+    .media{
+        margin-bottom: 20px;
+    }
+    .media:hover h5{
+        color: #28BEF3;;
+    }
+
+    .media-body{
+        padding-left: 30px;
+        h5{
+            font-size: 18px;
+            font-weight: 700;
+            @extend .font_josan;
+
+        }
+
+    }
+}
+// End Banner 4
+
+//  , Nhung Thuoc Tinh Chung
+
+.card_hover:hover img{
+    display: block;
+    transform:scale(1.2);
+}
+h2.title_h2{
+    font-size: 32px;
+     margin-bottom: 35px;
+    font-weight: 300;
+    @extend .font_josan;
+
+}
+// img{
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+// }
+p.text{
+    font-size:16px;
+
+    word-wrap: break-word;
+}
+
+.mr_bottom{
+    margin-bottom: 40px;
+}
+.box-center{
+    margin: auto auto;
+}
+
+// Banner 5
+.banner_5{
+    padding: 60px 15px 0;
+    &__item{
+        width: 100%;
+        max-height: 305px;
+        margin-bottom: 30px;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            
+        }
+        
+    }
+}
+// end Banner 5
+// Phan Spectical
+.special{
+    padding-bottom: 110px;
+    padding-top: 40px;
+    .box_special{
+        margin-top: 50px;
+        align-items: stretch;
+        &__item{
+            text-align: center;
+            height: 100%;
+        }
+    }
+    .box{
+        width: 100%;
+        height: 100%;
+        div.img_box{
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin-bottom: 40px;
+            
+        }
+        p{
+            padding: 0 35px;
+        }
+    }
+    .bor-right
+    {
+        border-right: 1px solid #B1B1B1;
+    }
+}
+// End Spectical
+// banner 6
+.banner_6{
+   background-image: url(https://thefirsttravels.com/files/files/banner7.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   position: relative;
+   margin-bottom: 70px;
+
+   .logo_top{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 7%;
+        width: 75px;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+   }
+    h4{
+        width: 80%;
+        text-align: center;
+        font-size: 32px;
+        color: #fff;
+        margin: auto auto 40px;
+        font-weight: 900;
+        letter-spacing: 3px;
+    }
+    span {
+        border-radius: 50%;
+       
+        width: 113px;
+        img{
+            
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    .text-spec{
+        width: 80%;
+        color:#fff;
+        word-wrap: break-word;
+        text-align: left;
+        padding-left: 25px;
+    }
+    .name_user{
+        margin-top: 20px;
+        h5{
+            font-size: 16px;
+            color: #fff;
+            font-weight: 600;
+        }
+        h6{
+            font-size: 14px;
+            color: #fff;
+            font-weight: 400;
+        }
+    }
+    .owl-dots{
+        margin-top: 20px;
+        .active{
+            background: orange;
+        }
+     }
+     .owl-dots .owl-dot{
+         margin-left: 10px;
+         width: 12px;
+         height: 12px;
+         border-radius: 50%;
+         outline: none;
+         span{
+             background: orange;
+         }
+        
+     }
+     .owl-nav{
+         display: none;
+     }
+
+}
+// End Banner6
+// destination 
+
+.destination{
+    margin: 0 auto;
+    &__slider{
+        margin-top: 60px;
+        .slider_item{
+            width: 100%;    
+            position: relative;
+            >div{
+                display: block;
+                width: 100%;
+                max-height: 295px;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+               
+            }
+           
+            .slider_body{
+                padding: 15px;
+                h5.name{
+                    font-size:18px;
+                    color: #000;
+                    @extend .font_josan;
+
+                }
+                p.text_slider{
+                    line-height: 28px;
+                    font-size: 14px;
+                    color: #000;
+                }
+                .read_more{
+                    margin: 0 0 20px;
+                }
+            }
+            
+        }
+   }
+}
+// end Détinatoin
+
+// Css Phan owl Carousel
+ .owl-nav button.owl-prev
+{
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform:translateY(-50%);
+    outline:none;
+}
+.owl-nav button.owl-next
+{
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform:translateY(-50%);
+    outline:none;
+
+}
+ .owl-nav button.owl-prev span,
+ .owl-nav button.owl-next span{
+    font-size: 50px;
+}
+ .owl-nav button.owl-prev
+{
+    // right: -20px;
+}
+// End Carousel
+// Phan List Travel
+.list_travel{
+    width: 100%;
+    background-color: #303030;
+    color: #fff;
+}
+.list_top{
+    padding-top: 50px;
+}
+.list_item{
+    width: 100%;
+    position: relative;
+    height: 300px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__text{
+        padding: 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
+        h5.name{
+            font-size:17px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        a{
+            font-size: 14px;
+            color: #fff;
+            display: block;
+        }
+    }
+}
+
+.list_bottom{
+    padding: 45px 0;
+    ul{
+        width: 80%;
+        margin: 0 auto;
+        list-style: none;
+        display: flex;
+        li{
+            width: 20%;
+            text-align: center;
+        }
+        h5{
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+    }
+}
+// End List Traval
+.list_menu{
+    background: #28BEF3;
+}
+.box_menu{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.list_menu .list_menu_left{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.list_menu .list_menu_right{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.list_menu .list_menu_left li{
+    padding: 20px 20px 15px 20px;
+}
+.list_menu .list_menu_right li{
+    padding: 20px 10px 15px;
+}
+.list_menu .list_menu_left a{
+    font-weight: 700;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: #fff;
+}
+.list_menu .list_menu_right a{
+    padding: 5px 20px;
+    background: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.list_menu_right li span{
+    padding: 10px 12px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+    @include flex();
+}
+.list_menu_right li i.fa{
+    font-size: 20px;
+    color: #fff;
+}
+// End List Travel
+// Phan FeedBack
+.feedback{
+    padding: 45px 0;
+    h3.title{
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    li{
+        // margin-bottom: 5px;
+        line-height: 30px;
+        a{
+            font-size:14px;
+            color: #0D47A1;
+        }
+
+    }
+}
+// End List Feeback
+//  Footer
+.footer{
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    &__main{
+        background: url(https://thefirsttravels.com/Content/img/index/contact_header/shadow.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+h3.title_pay{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+.pay_first{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .pay_card span{
+        margin-right: 15px;
+        img{
+            height: 38px;
+            width: auto;
+        }
+    }
+    .pay_menu{
+        @include flex();
+        a{
+            font-size:14px;
+            color: #28BEF3;
+            padding-left: 20px;
+        }
+    }
+   
+}
+.pay_last{
+    display: flex;
+    border-top: 1px solid gray;
+    padding-top: 30px;
+    li{
+        flex-grow: 4;
+        // p{Fsub_menu
+        //     font-size:14px;
+        //     color: #fff;
+        // }
+    }
+}
+
+// End  Footer
+
+// Form Search
+.form-search{
+    width: 400px;
+    height: 200px;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    background: #fff;
+    padding-top: 100px;
+    position: fixed;
+    top: -500px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100000;
+    >div{
+        padding: 20px;
+    }
+   
+    input{
+        font-size: 18px;
+        padding: 10px 10px;
+        border: 1px solid gray;
+        width: 100%;
+    }
+}
+.showFormSearch{
+    top: 20px;
+}
+
+// Icon Close
+span.closeTab{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    @include flex();
+    i.fa{
+        font-size:20px;
+    }
+}
+span.closeMenu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+     opacity: 0;
+    @include flex();
+    i.fa{
+        font-size:20px;
+    }
+   
+}
+// Danh Sahc Ben Phai 
+
+.tabRight-fas{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 100;
+    background: #0b94c5;
+    transition:all .4s;
+
+    span{
+        display: block;
+        padding: 15px 10px;
+        text-align: center;
+        img{
+            height: 28px;
+            width: auto;
+           
+        }
+        em{
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+           
+            display: none;
+           
+        }
+    }
+    &:hover span{
+        transform: scaleX(1.2);
+    }
+    &:hover em{
+        display: block;
+    }
+}
+// Nut Len Top
+
+.backTop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: orange;
+    border-radius: 50%;
+    // display: none;
+    cursor: pointer;
+    z-index: 5;
+    i.fa{
+        font-size:22px;
+        color: #fff;
+        padding: 15px;
+    }
+
+}
+
+// Nut CHuyen Silde Own carousel
+
+.end{
+    width: 100%;
+}
+.end_g{
+    @include flex(space-between,center);
+    padding: 5px 0;
+    p{ 
+        font-size: 14px;
+        margin: auto 0;
+    }
+    a{
+        padding: 5px 20px;
+        background: #EF801D;
+        font-size: 18px;
+        color: #fff;
+        border-radius: 5px;
+        i.fa{
+            padding-right: 5px;
+        }
+    }
+}
+
+// Call Api
+.call_api{
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background: blue;
+    border-radius: 50%;
+
+    display: none;
+    img{
+        height: 28px;
+        width: auto;
+    }
+}
+
+// Modal
+.modal_dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1111;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgb(61, 60, 60);
+}
+.modal_dialog .modal_content{
+    max-width: 620px;
+    margin:0 auto;
+    padding: 30px 50px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    color: #000;
+}
+.modal_header h4{
+    font-size: 22px;
+
+    font-weight: 600;
+}
+.modal_body{
+    width: 80%;
+    margin: 0 auto;
+}
+.modal_body .btn-dark{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    // margin-top: 10px;
+}
+.modal_img-bottom{
+    margin-top: 20px;
+}
+.modal_img-bottom img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.show-modal{
+    display: block;
+}
+.hideMenu{
+    display: none;
+}
+
+// Hieu Ung
+@keyframes goTop{
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}

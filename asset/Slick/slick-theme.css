@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+
+.slick-prev,
+.slick-next
+{
+    line-height: 0;
+    position: absolute;
+    top:50%;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #fff;
+}
+
+.slick-prev
+{
+    left: -40px;
+}
+.slick-next
+{
+    right:-40px;
+}
+
+.slick-next i.fa,
+.slick-prev i.fa{
+    font-size:3em;
+}
+
+.slick-next i.fa:hover,
+.slick-prev i.fa:hover{
+    color: aqua;
+}
+

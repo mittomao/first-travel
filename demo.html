@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .menu{
+            width: 1200px;
+            margin:0 auto;
+        }
+
+        ul.menu-parent{
+            width: 100%;
+            display:flex;
+            align-items: center;
+            list-style: none;
+            position: relative;
+            background: lime;
+        }
+        li{
+            padding: 10px 20px;
+        }
+      
+        li.sub_menu ul{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: pink;
+            margin: 0;
+			padding: 0;
+            transition: .3s;
+            list-style: none;
+			/* visibility: hidden;
+            z-index: 0;
+            opacity: 0; */
+        }
+        li.sub_menu.active-sub > ul {
+			opacity: 1;
+			visibility: visible;
+			z-index: 1;
+        }
+        
+        .show{
+            display:block;
+        }
+        .hide-sub{
+			transform: translateY(-30px);
+		}
+		.active-sub{
+			display: block;
+        }
+        option:hover{
+            background:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul class="menu-parent">
+            <li class="sub_menu">
+                Home
+                <ul>
+                    <li class="sub_menu">
+                        A
+                        <ul>
+                            <li>M</li>
+                            <li>M</li>
+                            <li>M</li>
+                            <li>M</li>
+                            <li>M</li>
+                        </ul>
+                    </li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    
+                </ul>
+            </li>
+            <li>Home 1</li>
+            <li>Home 2</li>
+            <li>Home 3</li>
+            <li> <select name="" id="">
+                <option value="1">HAA</option>
+                <option value="1">HAA</option>
+                <option value="1">HAA</option>
+                <option value="1">HAA</option>
+            </select></li>
+
+        </ul>
+    </div>
+    <script>
+		const menu =document.querySelectorAll(".sub_menu");
+		const back = document.querySelector(".back_abc");
+		const closeMenu = document.querySelector("#close_menu");
+		menu.forEach(item => {
+			item.addEventListener("click",function () { 
+				item.classList.add("active-sub");
+				item.parentElement.classList.add("hide-sub");
+				// back.classList.add("show");
+			 })
+		});
+		
+		// back.onclick = function () { 
+		// 	const a  = document.querySelectorAll(".active-sub");
+		// 	a[a.length-1].classList.remove("active-sub");
+		// 	a[a.length-1].parentElement.classList.remove("hide-sub");
+		// 	if(a.length == 1)
+		// 	{
+		// 		back.classList.remove("show");
+		// 	}
+		// 	console.log(a.length);
+		// }
+		// closeMenu.addEventListener("click",function(){
+		// 	menu.forEach(el=>{
+		// 		el.classList.remove("active-sub");
+		// 		el.parentElement.classList.remove("hide-sub");
+		// 	});
+		// });
+	</script>
+</body>
+</html>

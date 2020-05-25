@@ -1,0 +1,343 @@
+*{
+  margin: 0;
+  padding: 0;
+  transition:all .3s ease;
+}
+.form-search {
+    width: 400px;
+    height: 200px;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    background: #fff;
+    padding-top: 100px;
+    position: fixed;
+    top: -500px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+  .form-search > div {
+    padding: 20px;
+  }
+  .form-search input {
+    font-size: 18px;
+    padding: 10px 10px;
+    border: 1px solid gray;
+    width: 100%;
+  }
+  
+  .showFormSearch {
+    top: 20px;
+  }
+  
+  span.closeTab {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  span.closeTab i.fa {
+    font-size: 20px;
+  }
+  
+  span.closeMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  span.closeMenu i.fa {
+    font-size: 20px;
+  }
+  
+  .tabRight-fas {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 100;
+    background: #0b94c5;
+    transition: all 0.4s;
+  }
+  .tabRight-fas span {
+    display: block;
+    padding: 15px 10px;
+    text-align: center;
+  }
+  .tabRight-fas span img {
+    height: 28px;
+    width: auto;
+  }
+  .tabRight-fas span em {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    display: none;
+  }
+  .tabRight-fas:hover span {
+    transform: scaleX(1.2);
+  }
+  .tabRight-fas:hover em {
+    display: block;
+  }
+
+  /* banners */
+
+  .banners {
+    background: #fff;
+    opacity: 1;
+  }
+  .banners .btn_right {
+    margin-left: auto;
+  }
+  .banners .contact-mail, .banners .contact-phone {
+    margin-right: 30px;
+  }
+  .banners .contact-mail img, .banners .contact-phone img {
+    width: 23px;
+    margin-right: 15px;
+  }
+  .banners span {
+    font-size: 13px;
+  }
+  .banners .trustpilot span {
+    display: block;
+  }
+  .banners .trustpilot img {
+    width: 80px;
+  }
+  .banners .padding_b {
+    padding: 4px 0;
+  }
+
+  /* Menu */
+  .menu {
+    background: #4a4a4a;
+  }
+  
+  .nav-link {
+    padding: 24px 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Josefin Sans',sans-serif;
+  }
+ 
+
+  
+  .nav-item i.fa {
+    font-size: 13px;
+  }
+  .nav-item img {
+    width: 24px;
+    height: 24px;
+  }
+
+.contact-phone{
+  position: relative;
+}
+.sub-contact{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width:100%;
+
+  display:none;
+  background: #fff;
+  box-shadow: 0 0 5px gray;
+
+  font-size: 14px;
+  text-align: center;
+}
+.contact-phone:hover .sub-contact{
+  display: block;
+  z-index: 1111;
+}
+
+  /* Submenu */
+
+
+  .nav__bar--header {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-expand-lg {
+    padding: 0;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-left: 8px;
+  }
+  
+  .nav-item:last-child {
+    margin-left: 8px;
+  }
+  
+  li.sub_menu > ul.menu_flex {
+    position: absolute;
+    
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px gray;
+    /* opacity: 0;
+    visibility: hidden; */
+    width: 100%;
+    transition: 0.3s;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+  }
+  
+  li.sub_menu:hover > ul.menu_flex {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+  }
+  
+  ul.menu_flex {
+    display: flex;
+  }
+  
+  ul.menu_flex .left {
+    background: #fff;
+    width: 20%;
+    position: relative;
+  }
+  
+  ul.menu_flex .right {
+    width: 80%;
+    display: block;
+    padding: 20px;
+  }
+  ul.menu_flex .right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  li.sub_menu__child > ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 300px;
+    height: 100%;
+    background: rgba(255,255,255,.4);
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+  
+  li.sub_menu__child > ul a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  li.sub_menu__child.active-sub > ul {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+  
+  .sub_menu__child {
+    /* margin-top: 5px; */
+  }
+  
+  .sub_menu__child > li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .sub_menu__child a:hover {
+    color: #28BEF3 !important;
+  }
+
+  /* Nut Back Lai */
+  .back_abc{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+    cursor: pointer;
+    color: red;
+    z-index: 1000;
+  }
+  .back_abc i.fa{
+    font-size:16px;
+    color: #fff;
+    margin-right: 5px;
+  }
+
+   .back_abc.show{
+    display: block;
+    color: #fff;
+    background: rgb(0, 0, 0);
+  } 
+
+  .closeMenu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index:9998;
+    display: none;
+  }
+  .closeMenu i.fa{
+    font-size:25px;
+    color: #4a4a4a;
+  }
+ 
+
+  /*  */
+  .link_item{
+    position: relative;
+  }
+  .link_item::before{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 20px;
+    background: #fff;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    display: none;
+  }
+  .link_item:hover:before{
+    display: block;
+  }
+ 
+  /* Phan Banner Hien Hinh Anh */
+  .banner_main{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .banner_main img{
+      width: 100%;
+      object-fit: cover;
+  }

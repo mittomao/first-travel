@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contact_detail,.trip_detail{
+    width: 88%;
+    margin: 0 auto;
+    background: #F7F8FB;
+    padding: 20px;
+}
+h2.title_contact{
+    font-size: 24px;
+    color:#1A237E;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.form{
+   width: 85%;
+   margin: 0 auto;
+}
+input[type=text] ,select{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.padding{
+    padding:14.5px 30px;
+    display: inline;
+}
+.phone_number{
+    padding: 26px;
+}
+.trip_detail{
+    margin-top: 20px;
+}
+.trip_detail p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.button_request{
+    text-align: center;
+    margin: 0 auto;
+    padding: 21px 30px;
+    display: block;
+    background: #28BEF3;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
